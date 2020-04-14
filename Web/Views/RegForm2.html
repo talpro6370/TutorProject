@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html ng-app="tutor_app" ng-controller="Registration-Controller">
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+
+    <script src="../../Scripts/sweetalert2.all.min.js"></script>
+    <script src="../../Scripts/angular.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Scripts/Styles/MyCssStyle.css" />
+    <script src="../../Scripts/tutor_app.js"></script>
+    <script src="../../Scripts/ng-Controllers/Registration-Controller.js"></script>
+    <title>Register</title>
+
+</head>
+<body>
+    <h1 class="he1" style="margin-left:200px;margin-top:50px;">Register</h1>
+    <h4 style="margin-left:200px;font-weight:bold">Be a new member of Tutors-Online!</h4>
+    <form style="margin-top:30px;" ng-submit="onSubmit()" name="regForm">
+        <div class="container">
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="First_name">First Name</label>
+                    <input class="form-control" type="text" id="First_name" ng-model="first_name" placeholder="first name" required />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="Last_name">Last Name</label>
+                    <input class="form-control" type="text" id="Last_name" ng-model="last_name" placeholder="last name" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="user_name">User Name</label>
+                    <input type="text" id="user_name" class="form-control" ng-model="user_name" placeholder="username" required />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" ng-model="password" placeholder="Password" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input style="width:690px" type="email" id="email" class="form-control" ng-model="email" placeholder="email" required />
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <select style="width:690px;cursor:pointer;" class="form-control" ng-model="city" id="city" name="city" ng-options="item for item in cities" required></select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="profession">Profession</label>
+                    <select style="width:690px;cursor:pointer;" class="form-control" ng-model="profession" id="profession" name="profession" ng-options="item for item in profs " required></select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="phone_number">Phone Number</label>
+                    <input class="form-control" id="phone_number" type="text" ng-model="phone_number" placeholder="phone number" required />
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="selectGen">Gender</label>
+                    <select id="selectGen" class="form-control" required>
+                        <option disabled selected style="font-weight:bold" ng-model="gender">  Select an option  </option>
+                        <option class="glyphicon-option-horizontal">Male</option>
+                        <option class="glyphicon-option-horizontal">Female</option>
+                        <option class="glyphicon-option-horizontal">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <button type="submit" ng-click="Post_data(first_name,last_name,user_name,password,email,phone_number,city,profession,gender)" class="btn-new"><span>SUBMIT</span></button>
+            </div>
+        </div>
+</form>
+
+</body>
+</html>

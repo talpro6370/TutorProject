@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html ng-app="tutor_app" ng-controller="Login-Controller">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+
+    <script src="../../Scripts/sweetalert2.all.min.js"></script>
+    <script src="../../Scripts/angular.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Scripts/Styles/MyCssStyle.css" />
+    <script src="../../Scripts/ng-Controllers/TutorLoginController.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../Scripts/Styles/LoginPage.css" />
+    <link rel="stylesheet" href="../../Scripts/Styles/LoadingAnimation.css"/>
+    <title>Login Page</title>
+</head>
+<body>
+    <form class="form" ng-submit="onSubmit()">
+        <div class="login-box">
+            <h1>Sign In</h1>
+
+            <div class="textBox">
+                <input type="text" id="username" ng-model="username" placeholder="Username" required />
+            </div>
+
+            <div class="textBox">
+                <input type="password" id="password" ng-model="password" placeholder="Password" required />
+            </div>
+
+            <div>
+                <button class="loginBtn" type="submit" id="loginBtn" ng-click="Post_data(username,password)"> <span>LOGIN</span> </button>
+            </div>
+        </div>
+    </form>
+    <div id="loading">
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html ng-app="tutor_app">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <script src="../../Scripts/angular.js"></script>
+    <!--<script src="../../Scripts/angular.min.js"></script-->>
+    <link rel="stylesheet" type="text/css" href="/Scripts/Styles/MyCssStyle.css" />
+    <script src="../../Scripts/ng-Controllers/Registration-Controller.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    <div class="container main-content" ng-controller="Registration-Controller" id="ddv">
+        <header>
+            <h1 class="he1" style="text-align:left;padding-top:10px;">Registration</h1>
+        </header>
+        <form style="box-shadow:#000000 ">
+            <div class="input-group">
+                <span class="input-group-addon">First Name</span>
+                <input type="text" class="form-control" ng-model="first_name" id="firstName" placeholder="First Name" required />
+                <span class="input-group-addon">Last Name</span>
+                <input type="text" class="form-control" ng-model="last_name" id="lastName" placeholder="Last Name" required />
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon">User Name</span>
+                <input type="text" class="form-control" ng-model="user_name" id="userName" placeholder="User Name" required />
+                <span class="input-group-addon">Email</span>
+                <input type="email" class="form-control" ng-model="email" id="email" placeholder="Email" required style="float:left;"/>
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-addon">Password</span>
+                <input type="password" class="form-control" ng-model="password" id="password" placeholder="Password" required" />
+                <span class="input-group-addon">Confirm Password</span>
+                <input type="password" class="form-control" ng-model="password" id="confirmPassword" placeholder="Confirm Password" required" style="float:left;" />
+            </div>
+
+            <div class="input-group" ng-controller="Registration-Controller">
+                <span class="input-group-addon">Profession</span>
+                <select style="width:193.5px" class="form-control" ng-model="profs" id="select" name="select" ng-options="item for item in profs ">
+                </select>
+                <span class="input-group-addon">Phone Number</span>
+                <input type="text" class="form-control" ng-model="phone_number" id="phone_number" placeholder="Phone Number" required style="float:left;" />
+            </div>
+            <br />
+            <div class="input-group">
+                <button class="btn-new"><span>SUBMIT</span></button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
+

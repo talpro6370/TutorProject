@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html ng-app="tutor_app" ng-controller="Login-Controller">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script src="../../Scripts/sweetalert2.all.min.js"></script>
+    <script src="../../Scripts/angular.js"></script>
+    <script src="../../Scripts/tutor_app.js"></script>
+    <script src="../../Scripts/ng-Controllers/TutorLoginController.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="../../Scripts/materialize.min.css" />
+    <script src="../../Scripts/materialize.min.js"></script>
+    <link rel="stylesheet" href="../../Scripts/Styles/TutorHomePage.css" />
+    <title>Home Page</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper" style="background-color:#5be845">
+            <a class="brand-logo" style="text-shadow:#000000 1px 0.5px 5px;color:#19dce2;font-family:'Bowlby One SC';font-size:34px;cursor:default;text-decoration:none;">Tutors Online</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <content class="dropdown">
+                    <button type="button" class="btn btn-toolbar" aria-label="Right Align" data-toggle="dropdown"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"style="align-items:center;">
+                        <button class="btn btn-block" ng-click="Logout()">Control Panel</button>
+                        <button class="btn btn-block">Logout</button>
+                    </div>
+                </content>
+                <li><a class="btn btn-toolbar" href="#">Components</a></li>
+                <li><button class="btn btn-toolbar" href="#" >JavaScript</button></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
