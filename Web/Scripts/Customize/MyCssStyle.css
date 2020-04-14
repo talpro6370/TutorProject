@@ -1,0 +1,99 @@
+﻿body {
+    background-image: url(../../Imgs/Board-img-RegisterPage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.he1 {
+    font-weight: bold;
+    color: rgba(0,0,0,0.19);
+    font-size: 50px;
+    font-family: Calibri;
+    text-shadow: 2px 2px 1.5px #000000;
+}
+
+.label {
+    display:block;
+    text-align:left;
+    width: 140px;
+}
+.input{
+    display:block;
+
+}
+.input-group.lastName {
+    border-color: greenyellow;
+    border-collapse: collapse;
+    width: 300px;
+    padding: 8px;
+    float:left;
+}
+.input-group-addon {
+    width: 145px;
+    padding: 8px;
+    margin: auto;
+    text-align: left;
+    font-size:14px;
+    font-weight:bold;
+    background-color:#78a1c4;
+}
+
+.btn-new {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: 150px;
+    height:70px;
+    font-size: 24px;
+    font-family:Calibri;
+    font-weight: bolder;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px;
+    border: none;
+    background-color:#ffffff;
+    transition: all 0.5s;
+    padding: 20px;
+    text-align: center;
+}
+    .btn-new span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+        .btn-new span:after {
+            content: '\00bb';
+            position: absolute;
+            opacity: 0;
+            top: 0;
+            right: -20px;
+            transition: 0.5s;
+        }
+
+    .btn-new:hover span {
+        padding-right: 25px;
+        color: #72c938;    
+    }
+
+    .btn-new:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+
+.form-control {
+    border-color: #9bf3d1;
+    border-collapse: collapse;
+    width: 300px;
+    padding: 8px;
+}
+
+.list-group-item {
+    border-color: #9bf3d1;
+    border-collapse: collapse;
+    width: 193.5px;
+    padding: 8px;
+}
+.swal-customize {
+    font-size: 16px;
+    cursor: pointer;
+    color:#ffffff;
+}

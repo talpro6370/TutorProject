@@ -1,0 +1,103 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    background: url(../../Imgs/Board-img-RegisterPage.jpg) no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+
+}
+
+.login-box {
+    top: 20%;
+    left: 35%;
+    background:#50e3d3;
+    border-radius: 8px;
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    box-shadow:#000000 2px 1.5px 25px;
+}
+    .login-box h1 {
+        float: left;
+        font-size: 40px;
+        font-family:'Bowlby One SC';
+        color:#4cff00;
+
+        margin-bottom: 50px;
+        margin-left:30%;
+        padding: 10px 0;
+        text-shadow: #000000 1px 1px 8.5px
+    }
+.textBox {
+    width: 100%;
+    color:white;
+    overflow: hidden;
+    outline: none;
+    font-size: 20px;
+    padding: 10px 0;
+    margin: 8px 0;
+    border-bottom: 1.5px solid #4cff00;
+}
+    .textBox input {
+        border: none;
+        outline: none;
+        background: none;
+        width: 100%;
+        font-size: 20px;
+        color:white;
+        float: left;
+        margin: 0 10px;
+    }
+
+.loginBtn {
+    background: #4cff00;
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    border-radius: 3px;
+    border: #000000;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    font-weight: 800;
+    font-size: 22px;
+    box-shadow: #000000 0 0.5px 8px
+}
+.loginBtn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.loginBtn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.loginBtn:hover span {
+    padding-right: 25px;
+    color: #ff3a3a;
+}
+
+.loginBtn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.clearBtn {
+    background: none;
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 40px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
